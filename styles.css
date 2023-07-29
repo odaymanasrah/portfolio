@@ -1,0 +1,186 @@
+ /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    /* text-align: justify; */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-wrap: wrap; 
+    margin-top: 0px; 
+}
+
+.text {
+    flex: 1; /* Let the text div take the remaining space */
+    padding: 0px; /* Add padding for spacing */
+    font-weight: 400px;
+    font-size: large;
+}
+
+.image {
+    flex: 1; /* Let the image div take the remaining space */
+    text-align: right; /* Align the image to the right on larger screens */
+    padding: 0px;
+    margin-top: 0px; 
+}
+
+
+/* Styles for the image */
+.image .header {
+    /* For larger screens */
+    text-align: right;
+}
+
+.image img {
+    max-width: 100%; 
+    width: 100%; 
+    height: auto;
+    margin-top: 0px;
+
+}
+
+/* Media query for touch responsiveness on smaller screens */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Stack the elements vertically on smaller screens */
+    }
+
+    .text,
+    .image {
+        text-align: center; /* Center the content on smaller screens */
+        padding: 10px; /* Adjust the padding for smaller screens */
+    }
+
+    .image img {
+        max-width: 80%;
+        margin-top: 0px; /* Reduce the image size on smaller screens */
+    }
+}
+
+
+.container1 {
+
+    background-color:#f0f0f0 ;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: -10%;
+    height: 350px;
+    position:static;
+    
+}
+
+.container1 h1{
+
+    position:absolute;
+    text-align:end;
+    top: 100%;
+    left: 50px;
+    width: 300px;
+    padding: 5px;
+    font-size:30px;
+   text-align-last:left;
+  
+}
+
+.container1 h3{
+
+    position:absolute;
+    bottom: 50px;
+    color: #B22222;
+    text-align:end;
+    top: 117% ;
+    left:1px;
+    width: 200px;
+    padding: 5px;                                                      
+   
+}
+
+
+.container1 h5{
+   
+    text-align: center;
+    font-size: 13px;
+    color: #B22222;
+
+}
+.social {
+    position: absolute;
+    right: 5px;
+    width: 300px;
+    padding: 5px;
+    bottom:initial
+
+
+  }
+  .social i {
+    margin-right: 24px;
+    font-size: 24px;
+    color: black;
+    transition: 1s all;
+  }
+  .social i:hover {
+    color: var(--main-color);
+    transform: scale(1.6);
+  }
+
+
+
+  
+.header h1 {
+    font-size: 36px;
+}
+
+
+
+.container2 {
+    padding-top: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding: 20px;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+.left-column h3, .right-column h3 {
+    font-size: 24px;
+    color: #B22222;
+}
+
+.left-column ul, .right-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-column li, .right-column li {
+    margin-bottom: 20px;
+}
+
+.left-column li .date, .right-column li .date {
+    font-size: 16px;
+    color: #666;
+}
+
+.container2 p {
+    color: darkgrey;
+    font-size: 14px;
+}
+
